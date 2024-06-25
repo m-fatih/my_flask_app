@@ -36,10 +36,13 @@ jobs:
     - name: Install Heroku CLI
       run: curl https://cli-assets.heroku.com/install.sh | sh
 
+    - name: Set up Heroku remote
+      run: git remote add heroku https://git.heroku.com/fast-cove-68708.git
+
     - name: Log in to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: echo $HEROKU_API_KEY | heroku auth:token && heroku auth:whoami
 
     - name: Deploy to Heroku
-      run: heroku git:remote -a fast-cove-68708
+      run: git push heroku main
