@@ -37,7 +37,7 @@ jobs:
       run: curl https://cli-assets.heroku.com/install.sh | sh
 
     - name: Set up Heroku remote
-      run: heroku git:remote -a quiet-island-17248
+      run: heroku git:remote -a my_flask_app
 
     - name: Verify Heroku remote
       run: git remote -v
