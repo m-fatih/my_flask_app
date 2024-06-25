@@ -45,10 +45,7 @@ jobs:
     - name: Log in to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: echo $HEROKU_API_KEY | heroku auth:token
-
-    - name: Verify Heroku auth
-      run: heroku auth:whoami
+      run: echo $HEROKU_API_KEY | heroku auth:token && heroku auth:whoami
 
     - name: Deploy to Heroku
       env:
