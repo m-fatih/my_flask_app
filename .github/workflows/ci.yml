@@ -43,6 +43,9 @@ jobs:
 
     - name: Set up Heroku remote
       run: git remote add heroku https://git.heroku.com/quiet-island-17248.git
+      
+    - name: Pull latest changes from Heroku
+      run: git pull heroku main --allow-unrelated-histories
 
     - name: Push to Heroku
       env:
