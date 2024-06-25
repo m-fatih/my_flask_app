@@ -37,7 +37,7 @@ jobs:
       run: curl https://cli-assets.heroku.com/install.sh | sh
 
     - name: Set up Heroku remote
-      run: heroku git:remote -a my_flask_app
+      run: heroku git:remote -a quiet-island-17248
 
     - name: Verify Heroku remote
       run: git remote -v
@@ -45,7 +45,10 @@ jobs:
     - name: Log in to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: echo $HEROKU_API_KEY | heroku auth:token && heroku auth:whoami
+      run: echo $HEROKU_API_KEY | heroku auth:token
+
+    - name: Verify Heroku auth
+      run: heroku auth:whoami
 
     - name: Deploy to Heroku
       env:
