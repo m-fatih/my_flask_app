@@ -1,3 +1,5 @@
+import logging
+
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Resource, Api
@@ -10,6 +12,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 api = Api(app)
+
+# Set up logging
+logging.basicConfig(filename='app.log', level=logging.INFO,
+                    format='%(asctime)s %(levelname)s: %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
+
+# Log an info message when the app starts
+logging.info('Application startup')
 
 # Import models after initializing db
 class User(db.Model):
@@ -29,24 +39,33 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit():
     if request.method == 'POST':
-        # Get form data
-        name = request.form['name']
-        email = request.form['email']
-        # Save data to the database
-        new_entry = User(name=name, email=email)
-        db.session.add(new_entry)
-        db.session.commit()
-        return redirect(url_for('index'))
+        try:
+            # Get form data
+            name = request.form['name']
+            email = request.form['email']
+            # Save data to the database
+            new_entry = User(name=name, email=email)
+            db.session.add(new_entry)
+            db.session.commit()
+            logging.info(f'New user added: {name}, {email}')
+            return redirect(url_for('index'))
+        except Exception as e:
+            logging.error('Error during form submission', exc_info=True)
+            return 'An error occurred', 500
 
 # Route for displaying analysis results
 @app.route('/analysis')
 def analysis():
-    users = User.query.all()
-    total_users = len(users)
-    email_domains = [user.email.split('@')[1] for user in users]
-    domain_counts = {domain: email_domains.count(domain) for domain in set(email_domains)}
+    try:
+        users = User.query.all()
+        total_users = len(users)
+        email_domains = [user.email.split('@')[1] for user in users]
+        domain_counts = {domain: email_domains.count(domain) for domain in set(email_domains)}
 
-    return render_template('analysis.html', total_users=total_users, domain_counts=domain_counts)
+        return render_template('analysis.html', total_users=total_users, domain_counts=domain_counts)
+    except Exception as e:
+        logging.error('Error during form submission', exc_info=True)
+        return 'An error occurred', 500
 
 # API resource definition
 class UserListResource(Resource):
