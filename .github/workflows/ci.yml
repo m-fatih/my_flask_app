@@ -37,7 +37,7 @@ jobs:
       run: curl https://cli-assets.heroku.com/install.sh | sh
 
     - name: Set up Heroku remote
-      run: git remote add heroku https://git.heroku.com/quiet-island-17248.git
+      run: heroku git:remote -a quiet-island-17248
 
     - name: Verify Heroku remote
       run: git remote -v
@@ -48,4 +48,6 @@ jobs:
       run: echo $HEROKU_API_KEY | heroku auth:token && heroku auth:whoami
 
     - name: Deploy to Heroku
-      run: heroku deploy:git -a quiet-island-17248
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: git push heroku main
