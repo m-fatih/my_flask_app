@@ -64,7 +64,7 @@ def submit():
             db.session.add(new_entry)
             db.session.commit()
             logging.info(f'New user added: {name}, {email}')
-            flash('User successfully added!', 'success')
+            flash(f'Success! You entered Name: {name} & Email: {email}', 'success')
             return redirect(url_for('index'))
         except Exception as e:
             logging.error('Error during form submission', exc_info=True)
