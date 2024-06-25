@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis</title>
+</head>
+<body>
+    <h1>Data Analysis</h1>
+    <p>Total Users: {{ total_users }}</p>
+    <h2>Email Domain Counts:</h2>
+    <ul>
+        {% for domain, count in domain_counts.items() %}
+            <li>{{ domain }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Form</a>
+</body>
+</html>
