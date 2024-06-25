@@ -10,3 +10,84 @@
 2024-06-25 05:17:26 INFO: New user added: new, new@ga
 2024-06-25 05:17:26 INFO: 127.0.0.1 - - [25/Jun/2024 05:17:26] "[32mPOST /submit HTTP/1.1[0m" 302 -
 2024-06-25 05:17:26 INFO: 127.0.0.1 - - [25/Jun/2024 05:17:26] "GET / HTTP/1.1" 200 -
+2024-06-25 07:20:37 INFO: Application startup
+2024-06-25 07:20:42 INFO: Application startup
+2024-06-25 07:20:42 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-25 07:20:42 INFO: [33mPress CTRL+C to quit[0m
+2024-06-25 07:20:42 INFO:  * Restarting with stat
+2024-06-25 07:20:43 INFO: Application startup
+2024-06-25 07:20:43 WARNING:  * Debugger is active!
+2024-06-25 07:20:43 INFO:  * Debugger PIN: 945-202-818
+2024-06-25 07:20:54 INFO: 127.0.0.1 - - [25/Jun/2024 07:20:54] "GET / HTTP/1.1" 200 -
+2024-06-25 07:20:54 INFO: 127.0.0.1 - - [25/Jun/2024 07:20:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-06-25 07:20:57 INFO: 127.0.0.1 - - [25/Jun/2024 07:20:57] "GET / HTTP/1.1" 200 -
+2024-06-25 07:21:10 INFO: New user added: hihi, asda@fas
+2024-06-25 07:21:10 INFO: 127.0.0.1 - - [25/Jun/2024 07:21:10] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:21:10 INFO: 127.0.0.1 - - [25/Jun/2024 07:21:10] "GET / HTTP/1.1" 200 -
+2024-06-25 07:21:15 INFO: 127.0.0.1 - - [25/Jun/2024 07:21:15] "GET /analysis HTTP/1.1" 200 -
+2024-06-25 07:23:27 INFO: New user added: ad, adaaad@qwe
+2024-06-25 07:23:27 INFO: 127.0.0.1 - - [25/Jun/2024 07:23:27] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:23:27 INFO: 127.0.0.1 - - [25/Jun/2024 07:23:27] "GET / HTTP/1.1" 200 -
+2024-06-25 07:23:32 INFO: New user added: ds, 3@14
+2024-06-25 07:23:32 INFO: 127.0.0.1 - - [25/Jun/2024 07:23:32] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:23:32 INFO: 127.0.0.1 - - [25/Jun/2024 07:23:32] "GET / HTTP/1.1" 200 -
+2024-06-25 07:25:22 INFO: New user added: fsa, 1e#@da
+2024-06-25 07:25:22 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:22] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:25:22 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:22] "GET / HTTP/1.1" 200 -
+2024-06-25 07:25:31 INFO: New user added: as, as@dsa
+2024-06-25 07:25:31 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:31] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:25:31 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:31] "GET / HTTP/1.1" 200 -
+2024-06-25 07:25:35 INFO: New user added: Ad, das@dd
+2024-06-25 07:25:35 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:35] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:25:35 INFO: 127.0.0.1 - - [25/Jun/2024 07:25:35] "GET / HTTP/1.1" 200 -
+2024-06-25 07:27:49 INFO: Application startup
+2024-06-25 07:27:49 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-25 07:27:49 INFO: [33mPress CTRL+C to quit[0m
+2024-06-25 07:27:49 INFO:  * Restarting with stat
+2024-06-25 07:27:50 INFO: Application startup
+2024-06-25 07:27:50 WARNING:  * Debugger is active!
+2024-06-25 07:27:50 INFO:  * Debugger PIN: 945-202-818
+2024-06-25 07:27:51 INFO: 127.0.0.1 - - [25/Jun/2024 07:27:51] "GET / HTTP/1.1" 200 -
+2024-06-25 07:28:05 INFO: New user added: NewName, one@meil.com
+2024-06-25 07:28:05 INFO: 127.0.0.1 - - [25/Jun/2024 07:28:05] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:28:05 INFO: 127.0.0.1 - - [25/Jun/2024 07:28:05] "GET / HTTP/1.1" 200 -
+2024-06-25 07:30:43 INFO: Application startup
+2024-06-25 07:30:43 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-25 07:30:43 INFO: [33mPress CTRL+C to quit[0m
+2024-06-25 07:30:43 INFO:  * Restarting with stat
+2024-06-25 07:30:44 INFO: Application startup
+2024-06-25 07:30:44 WARNING:  * Debugger is active!
+2024-06-25 07:30:44 INFO:  * Debugger PIN: 945-202-818
+2024-06-25 07:30:45 INFO: 127.0.0.1 - - [25/Jun/2024 07:30:45] "GET / HTTP/1.1" 200 -
+2024-06-25 07:30:53 INFO: New user added: asf, fda@famsf
+2024-06-25 07:30:53 ERROR: Error during form submission
+Traceback (most recent call last):
+  File "C:\Users\Work\Documents\NewProject\app.py", line 63, in submit
+    flash('User successfully added!', 'success')
+  File "C:\Python310\lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+  File "C:\Python310\lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-06-25 07:30:53 INFO: 127.0.0.1 - - [25/Jun/2024 07:30:53] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-06-25 07:30:53 INFO: 127.0.0.1 - - [25/Jun/2024 07:30:53] "[36mGET /submit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-25 07:30:53 INFO: 127.0.0.1 - - [25/Jun/2024 07:30:53] "[36mGET /submit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-25 07:30:53 INFO: 127.0.0.1 - - [25/Jun/2024 07:30:53] "[36mGET /submit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-25 07:32:37 INFO:  * Detected change in 'C:\\Users\\Work\\Documents\\NewProject\\app.py', reloading
+2024-06-25 07:32:37 INFO:  * Restarting with stat
+2024-06-25 07:33:00 INFO: Application startup
+2024-06-25 07:33:00 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-25 07:33:00 INFO: [33mPress CTRL+C to quit[0m
+2024-06-25 07:33:00 INFO:  * Restarting with stat
+2024-06-25 07:33:00 INFO: Application startup
+2024-06-25 07:33:00 WARNING:  * Debugger is active!
+2024-06-25 07:33:00 INFO:  * Debugger PIN: 945-202-818
+2024-06-25 07:33:04 INFO: 127.0.0.1 - - [25/Jun/2024 07:33:04] "GET / HTTP/1.1" 200 -
+2024-06-25 07:33:09 INFO: New user added: AD, DSF@GM
+2024-06-25 07:33:09 INFO: 127.0.0.1 - - [25/Jun/2024 07:33:09] "[32mPOST /submit HTTP/1.1[0m" 302 -
+2024-06-25 07:33:09 INFO: 127.0.0.1 - - [25/Jun/2024 07:33:09] "GET / HTTP/1.1" 200 -
+2024-06-25 07:33:14 INFO: 127.0.0.1 - - [25/Jun/2024 07:33:14] "GET /analysis HTTP/1.1" 200 -
