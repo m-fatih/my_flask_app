@@ -37,7 +37,7 @@ jobs:
       run: curl https://cli-assets.heroku.com/install.sh | sh
 
     - name: Set up Heroku remote
-      run: heroku git:remote -a quiet-island-17248
+      run: git remote add heroku https://git.heroku.com/quiet-island-17248.git
 
     - name: Log in to Heroku
       env:
