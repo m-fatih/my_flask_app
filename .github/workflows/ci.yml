@@ -42,4 +42,4 @@ jobs:
       run: echo $HEROKU_API_KEY | heroku auth:token && heroku auth:whoami
 
     - name: Deploy to Heroku
-      run: git push heroku main
+      run: git push heroku master
